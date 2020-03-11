@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Educación 4.0</title>
+  <meta name="description" content="Bienvenid@s a Educacion 4.0">
+  <!-- La meta etiqueta theme color permite cambiar el color de la barra 
+    de navegacion -->
+  <meta name="theme-color" content="#00ccf">
+  <!-- Aquí le digo a los navegadores que la app esta optimizada 
+  para ellos -->
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <!--aqui estan las meta etiquetas para iphone & ipad -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Aqui esta la imagen de icono en el navegador -->
+  <link rel="shortcut icon" type="image/png" href="./img/docqui.png">
+  <!-- Aqui esta la imagen circular -->
+  <link rel="apple-touch-icon" href="./docqui.png">
+  <link rel="apple-touch-startup-image" href="./docqui.png">
+  <!-- Aqui esta la etiqueta del JSON se tiene que cargarse de preferencia en la
+  raiz del sitio web -->
+  <link rel="manifest" href="./manifest.json">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js"></script>
+</head>
+
+<script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyDtxp8Ed3TCiheH1AA97Lhpl8wvPrNDSo8",
+    authDomain: "educacion4-81432.firebaseapp.com",
+    databaseURL: "https://educacion4-81432.firebaseio.com",
+    projectId: "educacion4-81432",
+    storageBucket: "educacion4-81432.appspot.com",
+    messagingSenderId: "1057720227029",
+    appId: "1:1057720227029:web:b504ff2f253f391a0fbe5c",
+    measurementId: "G-LHE10VXL70"
+    };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    
+    // Retrieve Firebase Messaging object.
+    const messaging = firebase.messaging();
+</script>
+<style>
+  div {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+</style>
+<body>
+<body>
+
+    <div id="token"></div>
+    <div id="message"></div>
+    <div id="error"></div>
+    <script src="index.js"></script>
+
+
+ 
+  <header>
+      <!--div class="menu-toggler">
+          <div class="bar half start"></div>
+          <div class="bar"></div>
+          <div class="bar half end"></div>
+      </div>
+      <Aqui esta el menu despegable con sus links>
+      <nav class="top-nav">
+          <ul class="nav-list">
+              <li>
+                  <a href="index.html" class="nav-link"> Home </a>
+              </li>
+              <li>
+                  <a href="../informate/index.html" class="nav-link"> infórmate </a>
+              </li>
+              <li>
+                  <a href="../medicos/index.html" class="nav-link"> Contacto médico </a>
+              </li>
+              <li>
+                  <a href="../equipo/index.html" class="nav-link"> Equipo de trabajo </a>
+              </li>
+              <li>
+                  <a href="../politicas/index.html" class="nav-link"> Politícas de uso </a>
+              </li>
+
+          </ul>
+      </nav-->
+      <div class="landing-text">
+          <h1>Educación 4.0</h1>
+          <h6>Instituto Politécnico Nacional</h6>
+          <!-- boton -->
+          
+      </div>
+      <div class="btn">
+          <button class="button" onclick="window.location.href='./recursos/registro/index.html'"> Registrate </button>
+          <button class="button1" onclick="window.location.href='./recursos/inicio/index.html'"> Entra </button>
+          <!--button class="button2" onclick="window.location.href='../prevencion/index.html'"> Prevención </button>
+          <button class="button3" onclick="window.location.href='../medicos/index.html'"> Contacto </button-->
+  </div>
+  </header>
+  <!--Aqui comienza la informacion de la pagina-->
+  <section class="about" id="about">
+      <div class="container">
+          <!--div class="profile-img" data-aos="fade-up" data-aos-delay="300" >
+              <img src="./recursos/prueba/img/transformacion.png" alt=""-->
+          </div>
+          <div class="about-details" data-aos="fade-down" data-aos-delay="300">
+              <!--div class="about-heading">
+  <Aqui esta mi infromacion personal y mi foto de perfil>
+                 <h1> Educación 4.0 </h1>
+                  <h6>  </h6>
+              </div-->
+              <!--p> Docqui es una app en la que puedes consultar tus síntomas en la zona inguinal y viril de
+                  un hombre, ádemas puedes informarte acerca de los padecimientos que un hombre puede tener
+                  a lo largo de su vida y encontrar temas de preevención importantes para un hombre.
+              </p>
+
+              <Aqui estan las redes sociales-->
+                <br>
+                <br>
+                <br>
+
+              <div class="social-media">
+                      <ul class="nav-list">
+                          <li>
+                              <a href="https://www.facebook.com/CashMoneyBillionaire" class="icon-link">
+                                  <i class="fab fa-facebook-square"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="" class="icon-link">
+                                  <i class="fab fa-youtube-square"></i>
+                               </a>
+                          </li>
+                          <li>
+                              <a href="" class="icon-link">
+                                  <i class="fab fa-twitter-square"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="" class="icon-link">
+                                  <i class="fab fa-instagram"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+          </div>
+  <!--Aqui estan los links de las redes sociales y sus iconos **** me falta acomodar el de instagram-->
+        
+      </div>
+  </section>
+  <!--Aqui esta la seccion de servicios minuto 1:08:00 para los iconos-->
+  
+  
+  <!--Aqui esta el footer lo de hasta abajo XD>
+  <footer class="copyright">
+      <div class="up" id="up">
+          <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy;Proyecto para el IPN | 2020 </p>
+  </footer-->
+  <script src="./script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="main.js"></script>
+</body>
+</html> 
+
